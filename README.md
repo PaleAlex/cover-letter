@@ -5,4 +5,4 @@
 
 * Ruby version 2.7.3
 
- My Cover letter and cv to apply for TeamSystem open positions :)
+ Here you find my cv and Cover Letter to apply for your open positions. If you README, please give me a chance :)
