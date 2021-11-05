@@ -5,6 +5,9 @@ class PagesController < ApplicationController
 
   def cv
   end
-  
+
+  def en
+  end
+
 
 end
