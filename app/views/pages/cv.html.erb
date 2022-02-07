@@ -28,7 +28,7 @@
         <!--  <li class="nav-item"><p class="nav-link js-scroll-trigger"><#%= link_to 'My Cover Letter', root_path %></p></li> -->
           <li class="nav-item"><p class="nav-link js-scroll-trigger">My CV</p></li>
           <li class="nav-item"><%=image_tag("it.png", size:5*5, alt:"cv in italiano", style: "opacity: 0.5;") %></li>
-          <li class="nav-item"><%=link_to image_tag("en.png", size:5*5, class: "mt-2", alt: "cv in English"), en_path %></li>
+        <!--  <li class="nav-item"><#%=link_to image_tag("en.png", size:5*5, class: "mt-2", alt: "cv in English"), en_path %></li> -->
         </ul>
       </div>
     </nav>
@@ -45,8 +45,8 @@
                 +39 340 410 7694 ·
                 <a href="mailto:name@email.com">aless.ciocchetti@gmail.com</a> <br><br> Bologna, <%= Time.now.strftime("%d-%m-%Y") %>
               </div>
-              <p class="lead mb-5">Laureato magistrale in Ingegneria Gestionale-Industriale, con tre differenti esperienze lavorative e responsabile dello sviluppo di due software per l'ottimizzazione dei processi aziendali e per l'elaborazione
-              dei dati e delle informazioni prodotti da macchinari CNC. Per il resto, mi diverto a creare web-app e siti web e a studiare l'algorithmic trading applicato ai mercati azionari. <br>Nel tempo libero appassionato lettore, armonicista e cinefilo</p>
+              <p class="lead mb-5">Laureato magistrale in Ingegneria Gestionale & Industriale, con tre differenti esperienze lavorative e responsabile dello sviluppo di due software per l'ottimizzazione dei processi aziendali e per l'elaborazione
+              dei dati e delle informazioni prodotti da macchinari CNC. Sono appassionato di Data Science, mi diverto a creare web-app (e.g. questo cv 😄) e siti web e a studiare l'algorithmic trading applicato ai mercati azionari. <br>Nel tempo libero appassionato lettore, armonicista e cinefilo</p>
               <div class="social-icons">
                 <a class="social-icon" href="https://www.linkedin.com/in/alessandro-ciocchetti-281217152/", target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a class="social-icon" href="https://github.com/PaleAlex" target="_blank"><i class="fab fa-github"></i></a>
@@ -60,16 +60,16 @@
                     <h2 class="mb-5">Esperienze</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Business Consultant</h3>
-                            <div class="subheading mb-3">SCS Consulting, Bologna</div>
+                            <h3 class="mb-0">Business Analyst and Consultant</h3>
+                            <div class="subheading mb-3"><a href="https://scsconsulting.it/" target="_blank">SCS Consulting, Bologna</a></div>
                             <p>Consulenza strategica e direzionale alle aziende dei mercati Retail, Industria e Servizi. Sono stato coinvolto finora in quattro diversi progetti con attività riguardanti l'analisi dei processi e dei dati delle aziende clienti, la costruzione di modelli per le politiche di Pricing e Assortimentali delle GDO, analisi di mercato e marketing, supporto in termini di project management, presentazione dei risultati</p>
                         </div>
-                        <div class="flex-shrink-0"><span class="text-primary">Aprile 2020 - presente</span></div>
+                        <div class="flex-shrink-0"><span class="text-primary">Aprile 2020 - Dicembre 2021</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Tirocinio per Tesi</h3>
-                            <div class="subheading mb-3">WASP - World's Advanced Saving Projects, Massa Lombarda </div>
+                            <div class="subheading mb-3"><a href="https://www.3dwasp.com/" target="_blank">WASP - World's Advanced Saving Projects, Massa Lombarda</a></div>
                             <p>Sviluppo di Tesi Universitaria (titolo: "Studio per l'implementazione del Performance Management System e della Lean Manufacturing") presso l'azienda con l'obiettivo di riorganizzare e ottimizzare il processo produttivo in logica Lean e di determinare la struttura dei costi dei prodotti</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Settembre 2019 - Febbraio 2020</span></div>
@@ -77,7 +77,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Tirocinio Curriculare</h3>
-                            <div class="subheading mb-3">Archita Engineering, Bologna</div>
+                            <div class="subheading mb-3"><a href="https://www.architaengineering.it/" target="_blank">Archita Engineering, Bologna</a></div>
                             <p>Redazione di documenti tecnici relativi all'ambito della consulenza fiscale per le imprese, con definizione dei costi annuali sostenuti per la R&S (Piano Industria 4.0)</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Febbraio 2018 - Luglio 2018</span></div>
@@ -91,15 +91,22 @@
                     <h2 class="mb-5">Istruzione</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0">Università di Pisa</h3>
+                            <div class="subheading mb-3"> <a href="https://masterbigdata.it/" target="_blank">Master di Secondo Livello - Data Science</a></div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">Gennaio 2022 - Presente</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">Università di Bologna - Alma Mater Studiorum</h3>
-                            <div class="subheading mb-3">Laurea Magistrale in Ingegneria Gestionale e Industriale <small>(108/110)</small></div>
+                            <div class="subheading mb-3"><a href="https://corsi.unibo.it/magistrale/IngegneriaGestionale" target="_blank">Laurea Magistrale in Ingegneria Gestionale e Industriale</a></div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Ottobre 2017 - Marzo 2020</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Università di Bologna - Alma Mater Studiorum</h3>
-                            <div class="subheading mb-3">Laurea in Ingegneria Gestionale e Industriale <small>(101/110)</small></div>
+                            <div class="subheading mb-3"> <a href="https://corsi.unibo.it/laurea/IngegneriaGestionale" target="_blank">Laurea in Ingegneria Gestionale e Industriale</a></div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">Ottobre 2014 - Ottobre 2017</span></div>
                     </div>
@@ -117,6 +124,7 @@
                       <li class="list-inline-item"><i class="fab fa-html5"></i></li>
                       <li class="list-inline-item"><i class="fab fa-css3-alt"></i></li>
                       <li class="list-inline-item"><i class="fab fa-python"></i></li>
+                      <li class="list-inline-item"><i class="fas fa-database"></i></li>
                       <li class="list-inline-item"><i class="fab fa-bootstrap"></i></li>
                       <li class="list-inline-item"><%= image_tag("dns.png", size:7*7) %></li>
                       <li class="list-inline-item"><%= image_tag("excel.jpg", size:7*7) %></li>
@@ -182,7 +190,7 @@
                   </li>
                   <li>
                     <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                    <a href="https://www.libraccio.it/libro/9788827840870/alessandro-ciocchetti/prigionia.html">Pubblicazione romanzo inedito dal titolo "Prigionia"</a>
+                    <a href="https://www.libraccio.it/libro/9788827840870/alessandro-ciocchetti/prigionia.html">Pubblicazione romanzo dal titolo "Prigionia"</a>
                   </li>
                 </ul>
               </div>
