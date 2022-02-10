@@ -27,7 +27,7 @@
         <ul class="navbar-nav">
         <!--  <li class="nav-item"><p class="nav-link js-scroll-trigger"><#%= link_to 'My Cover Letter', root_path %></p></li> -->
           <li class="nav-item"><p class="nav-link js-scroll-trigger">My CV</p></li>
-          <li class="nav-item"><%=link_to image_tag("it.png", size:5*5, alt:"cv in italiano"), cv_path %></li>
+          <!--<li class="nav-item"><#%=link_to image_tag("it.png", size:5*5, alt:"cv in italiano"), cv_path %></li> -->
           <li class="nav-item"><%=image_tag("en.png", size:5*5, class: "mt-2", alt: "cv in English", style: "opacity: 0.5;") %></li>
         </ul>
       </div>
@@ -45,9 +45,12 @@
                 +39 340 410 7694 ·
                 <a href="mailto:name@email.com">aless.ciocchetti@gmail.com</a> <br><br> Bologna, <%= Time.now.strftime("%d-%m-%Y") %>
               </div>
-              <p class="lead mb-5">Master's Degree in Management and Industrial Engineering, with three different working experiences. Owner for the development of two softwares, aimed to optimize workflows and to process data produced by CNC machines. In addition to this, I enjoy writing code, creating web-app and websites, studying trading algorithms with Python. <br>In my free time I am a reader, an harmonica player and a cinema-lover</p>
+              <p class="lead mb-5">I have a Master's Degree in Management and Industrial Engineering and I am actually attending a <a href="#education">post-degree Master in Data Science</a>. I have <a href="#experience">three different working experiences</a>. When we were 22 and still University students, a great friend of mine and me developed and sold <a href="https://drive.google.com/drive/folders/1-iGCmgxChkWwR56Fcl4j1NJBMsGgqBnG?usp=sharing" target = "_blank">two softwares</a>
+              to an Italian company, aimed to optimize workflows and to process data produced by CNC machines
+              (this was an incredible adventure if I think that we accepted that commit without knowing anything about CNCs or either Python libraries such as Pandas to manage structured data...but we've learnt everything and made it perfectly! That's team work).
+              I feel <a href="#skills">passionate</a> about Data Science, Programming, creating Web-App (e.g. this cv 😄) and Websites. <br>In my <a href="#interests">free time</a> I am mostly a reader, an harmonica player (<a href="https://www.youtube.com/watch?v=RsI-1ktxDBw" target = "_blank">you'd better believe me!</a>) and finally a [cinema, chess, card magic].lover(❤️); </p>
               <div class="social-icons">
-                <a class="social-icon" href="https://www.linkedin.com/in/alessandro-ciocchetti-281217152/", target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-icon" href="https://www.linkedin.com/in/ac-palealex/", target="_blank"><i class="fab fa-linkedin-in"></i></a>
                 <a class="social-icon" href="https://github.com/PaleAlex" target="_blank"><i class="fab fa-github"></i></a>
               </div>
             </div>
@@ -59,8 +62,8 @@
                     <h2 class="mb-5">Working Experiences</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
-                            <h3 class="mb-0">Junior Business Consultant</h3>
-                            <div class="subheading mb-3">SCS Consulting, Bologna</div>
+                          <h3 class="mb-0">Business Analyst and Consultant</h3>
+                          <div class="subheading mb-3"><a href="https://scsconsulting.it/get-to-know-scs/" target="_blank">SCS Consulting, Bologna</a></div>
                             <p>Strategic and management consulting for companies. I've been in charge for process and data analysis; pricing, stock and assortment modeling; market analysis; project management; display and presentation of the results</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">April 2020 - December 2021</span></div>
@@ -68,7 +71,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Master's Degree Thesis Internship</h3>
-                            <div class="subheading mb-3">WASP - World's Advanced Saving Projects, Massa Lombarda </div>
+                            <div class="subheading mb-3"><a href="https://www.3dwasp.com/en" target="_blank">WASP - World's Advanced Saving Projects, Massa Lombarda</a></div>
                             <p>MSc thesis project (title: "Implementing a Performance Management System and the Lean Manufacturing for WASP") regarding the analysis of manufacturing processes and products' cost structure.</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">September 2019 - February 2020</span></div>
@@ -76,7 +79,7 @@
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">Internship</h3>
-                            <div class="subheading mb-3">Archita Engineering, Bologna</div>
+                            <div class="subheading mb-3"><a href="https://www.architaengineering.it/" target="_blank">Archita Engineering, Bologna</a></div>
                             <p>Tax consultancy for companies, drafting of technical documents with definition of the annual R&D costs (Industry 4.0 Plan)</p>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">February 2018 - July 2018</span></div>
@@ -90,15 +93,22 @@
                     <h2 class="mb-5">Education</h2>
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
                         <div class="flex-grow-1">
+                            <h3 class="mb-0">University of Pisa</h3>
+                            <div class="subheading mb-3"> <a href="https://masterbigdata.it/en" target="_blank">II Level Master - Data Science</a></div>
+                        </div>
+                        <div class="flex-shrink-0"><span class="text-primary">January 2022 - Present</span></div>
+                    </div>
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-5">
+                        <div class="flex-grow-1">
                             <h3 class="mb-0">University of Bologna - Alma Mater Studiorum</h3>
-                            <div class="subheading mb-3">Master's Degree in Industrial and Management Engineering </div>
+                            <div class="subheading mb-3"><a href="https://corsi.unibo.it/2cycle/EngineeringManagement" target="_blank">Master's Degree in Industrial and Management Engineering</a></div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">October 2017 - March 2020</span></div>
                     </div>
                     <div class="d-flex flex-column flex-md-row justify-content-between">
                         <div class="flex-grow-1">
                             <h3 class="mb-0">University di Bologna - Alma Mater Studiorum</h3>
-                            <div class="subheading mb-3">Bachelor's Degree in Industrial and Management Engineering </div>
+                            <div class="subheading mb-3"> <a href="https://corsi.unibo.it/1cycle/EngineeringManagement" target="_blank">Bachelor's Degree in Industrial and Management Engineering</a></div>
                         </div>
                         <div class="flex-shrink-0"><span class="text-primary">October 2014 - October 2017</span></div>
                     </div>
@@ -109,7 +119,7 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages and tools</div>
+                    <div class="subheading mb-3">Programming Languages and Tools where I am 💪 (updated to today) </div>
                     <ul class="list-inline dev-icons">
                       <li class="list-inline-item"><%= image_tag("ruby.jpg", size:7*7) %></li>
                       <li class="list-inline-item"><%= image_tag("rails.png", size:7*7) %></li>
@@ -138,11 +148,11 @@
                         </li>
                         <li>
                           <span class="fa-li"><i class="fas fa-check"></i></span>
-                          2018 - Production of the data analysis software "BeBot/BePlot" for Universal 1972 Srl (Mantova)
+                          2018 - Development of the data analysis softwares <a href="https://drive.google.com/drive/folders/1-iGCmgxChkWwR56Fcl4j1NJBMsGgqBnG?usp=sharing" target = "_blank">"BeBot/BePlot"</a> for Universal 1972 Srl (Mantova). The names are a tribute to the anime "Cowboy Bebop"
                         </li>
                         <li>
                           <span class="fa-li"><i class="fas fa-check"></i></span>
-                          2018 - Production of the data analysis software "FC Matrix Writer" for Archita Engineering Srl (Bologna)
+                          2018 - Development of the data analysis software "FC Matrix Writer" for Archita Engineering Srl (Bologna)
                         </li>
                     </ul>
                 </div>
@@ -154,7 +164,8 @@
                     <h2 class="mb-5">Interests</h2>
                     <p>Out of my professional life, I have several interests that make me who I am and are very important to me. I am an enthusiastic reader of classical novels (one of my favourite is Moby Dick), I love watching movies (Leone, Von Trier, Kubrick...), I listen a lot of music (almost all genres).
                     I am also engaged in personal "experiments": I've written and published a book called "Prigionia" and I play the harmonica in a blues-funky band. Furthermore, I like chess and card magic.</p>
-                    <p class="mb-0">I am quite a sporty person: I train almost every day and I play football, I like skiing and walking (with my dog). </p>
+                    <p class="mb-0">I am quite a sporty person: I train almost every day and I play football, I like skiing and trekking (with my dog).<br>
+                    I walked from Bologna to Firenze in 6 days (<a href="https://en.viadeglidei.it/" target = "_blank">"Via degli Dei"</a>) and from Bologna to Prato in 5 days (<a href="https://www.viadellalanaedellaseta.com/?lang=en" target="_blank">"Via della Lana e della Seta"</a>).</p>
                     <br>
                   <!-- <#%= link_to("Cover letter here", root_path) %> -->
                 </div>
@@ -167,7 +178,7 @@
                 <ul class="fa-ul mb-0">
                   <li>
                     <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                    <a href="/python for finance en.pdf" target="_blank">Python for Finance - Financial Analysis for Investing</a>
+                    <a href="/python for finance en.pdf" target="_blank">Python for Finance - Financial Analysis</a>
                   </li>
                   <li>
                     <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
@@ -179,11 +190,11 @@
                   </li>
                   <li>
                     <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                    <a href="https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/" target="_blank">Ruby on Rails Developer Course</a>
+                    <a href="https://www.udemy.com/course/the-complete-ruby-on-rails-developer-course/" target="_blank">Ruby on Rails for Developers</a>
                   </li>
                   <li>
                     <span class="fa-li"><i class="fas fa-trophy text-warning"></i></span>
-                    <a href="https://www.libraccio.it/libro/9788827840870/alessandro-ciocchetti/prigionia.html">Here is my novel "Prigionia"</a>
+                    <a href="https://www.libraccio.it/libro/9788827840870/alessandro-ciocchetti/prigionia.html" target="_blank">Here is my novel "Prigionia"</a>
                   </li>
                 </ul>
               </div>
