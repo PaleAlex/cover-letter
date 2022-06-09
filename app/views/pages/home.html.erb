@@ -13,6 +13,18 @@
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
     <!-- Core theme CSS (includes Bootstrap)-->
+    <style media="screen">
+      input[type='checkbox'] { display: none; }
+      .wrap-collabsible { margin: 1.2rem 0; }
+      .lbl-toggle { display: block; font-size: 0.9rem; font-family: "Segoe UI"; text-align: center; padding: 1rem; color: #FFF; background: #BD5D38; cursor: pointer; border-radius: 7px; transition: all 0.9s ease-out; }
+      .lbl-toggle::before { content: ' '; display: inline-block; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 5px solid currentColor; vertical-align: middle; margin-right: .7rem; transform: translateY(-2px); transition: transform .8s ease-out; }
+      .toggle:checked+.lbl-toggle::before { transform: rotate(90deg) translateX(-3px); }
+      .collapsible-content { max-height: 0px; overflow: hidden; transition: .2s ease-in-out; }
+      .toggle:checked + .lbl-toggle + .collapsible-content { max-height: 100%; }
+      .toggle:checked + .lbl-toggle { border-bottom-right-radius: 0; border-bottom-left-radius: 0; }
+      .collapsible-content .content-inner { background:#f7e7e1; border-bottom: 1px solid #BD5D38; border-bottom-left-radius: 7px; border-bottom-right-radius: 7px; padding: .5rem 1rem; }
+      .collapsible-content p { margin-bottom: 4; }
+    </style>
   </head>
   <body id="page-top">
 
@@ -26,7 +38,7 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav">
           <li class="nav-item"><p class="nav-link js-scroll-trigger">My Cover Letter</p></li>
-          <li class="nav-item"><p class="nav-link js-scroll-trigger"><%=link_to 'My CV', cv_path %> </p></li>
+          <li class="nav-item"><p class="nav-link js-scroll-trigger"><%=link_to 'My CV', en_path %> </p></li>
         </ul>
       </div>
     </nav>
@@ -34,69 +46,60 @@
     <div class="container-fluid p-0">
       <!-- About-->
       <section class="resume-section" id="about">
-          <div class="resume-section-content">
-            <h1 class="mb-0">
-              Alessandro
-              <span class="text-primary">Ciocchetti</span>
-            </h1>
-            <div class="subheading mb-5">
-              +39 340 410 7694 ·
-              <a href="mailto:name@email.com">aless.ciocchetti@gmail.com</a> <br><br> All'attenzione dell'Università di Pisa
-            </div>
-
-
-            <!-- per le aziende
-
-            <p class="lead mb-5">
-              Ciao, <br>
-              sono felice di potermi presentare e potervi presentare la mia candidatura.
-              Ho approfittato dell'occasione per cercare di rendere la mia presentazione il più originale possibile, in modo tale che potesse raccontarmi già nella sua forma oltre che nel contenuto. <br> Ho creato personalmente questa web app e gli strumenti/linguaggi che ho utilizzato sono il framework Ruby on Rails con back-end gestito con Ruby e front-end HTML5 e CSS/SCSS. <br>
-              Sono laureato magistrale in Ingegneria Gestionale-Industriale a Bologna e da un anno e mezzo lavoro per un'ottima società di consulenza direzionale per i mercati Retail, Industria e Servizi a Bologna.<br>
-              L'ambiente consulenziale è un ambiente molto dinamico e in cui si può imparare davvero tanto in poco tempo. Questa caratteristica si abbina bene alla mia costante volontà di apprendimento.
-              <br>Credo poi che avere il tempo e il modo di apprendere qualcosa che per di più ci piace apprendere sia un privilegio... e quindi voglio provare a perseguirlo ulteriormente.<br>
-              Vi introduco alle mie passioni:
-              <br>1. PENSARE  - la metto al primo posto perchè da questa derivano le altre. Mi impegno quotidianamente a rimanere mentalmente stimolato, di conseguenza ai lavori ripetitivi e strutturati preferisco per esempio quelli in cui si devono trovare nuove soluzioni o impostare nuove strategie e ragionamenti.
-              <br>2. IT e LINGUAGGI DI PROGRAMMAZIONE  - mondo che mi affascina particolarmente e che finora ho sempre studiato da autodidatta e che spero quanto prima possa diventare anche parte della mia vita professionale per approfondire e focalizzare sempre più le mie conoscenze. Oltre agli strumenti citati sopra, conosco Python (che al momento utilizzo insieme alle sue librerie per studiare soprattutto i concetti dell'algorithmic trading di stock azionari e CFD), SQL, Visual Basic e MS Excel (quest'ultimo spererei di usarlo sempre meno a favore di strumenti più sofisticati e innovativi).
-              <br>3. ARTI  - do tanto valore al mio tempo libero, perchè è il momento in cui costruisco la mia persona. Sono oggi felice di potermi dire un discreto armonicista e un buon cultore del cinema e della letteratura ottocentesca.
-              <br>4. NATURA  - amo la montagna, il mare, il trekking e lo studio degli animali. Ho percorso a piedi in compagnia del mio cane (Paki) nel 2015 la "Via degli Dei" e nel 2021 la "<a href="https://www.youtube.com/watch?v=CGItrNN3-oI" target="_blank">Via della Lana e della Seta</a>".
-              <br>Il lavoro ideale per me è quello che riesca a conciliare questi 4 punti.
-              Sono incline all'innovazione e alle nuove sfide e sono convinto che le scelte che si fanno alla mia età, poichè incidono su un intervallo di tempo futuro (possibilmente) più ampio, abbiano una rilevanza particolare.
-              Mi ritengo estremamente motivato e flessibile, le novità mi stimolano e per questo sono alla ricerca di una posizione che possa valorizzare il mio entusiasmo e tramite cui io possa dare il meglio di me.
-              <br>Nella speranza di potermi raccontare con più completezza in una prossima occasione, vi lascio con i migliori saluti, <br>
-              <br>Alessandro<br>
-            </p> -->
-
-            <!-- per master -->
-
-            <p class="lead mb-5">
-              Ciao, <br>
-              sono felice di potermi presentare e potervi presentare la mia candidatura.
-              Ho approfittato dell'occasione per cercare di rendere la mia presentazione il più originale possibile, in modo tale che potesse raccontarmi già nella sua forma oltre che nel contenuto. <br> Ho creato personalmente questa web app e gli strumenti/linguaggi che ho utilizzato sono il framework Ruby on Rails con back-end gestito con Ruby e front-end HTML5 e CSS/SCSS. <br>
-              Sono laureato magistrale in Ingegneria Gestionale-Industriale a Bologna e da un anno e mezzo lavoro per un'ottima società di consulenza direzionale per i mercati Retail, Industria e Servizi a Bologna.<br>
-              L'ambiente consulenziale è un ambiente molto dinamico e in cui si può imparare davvero tanto in poco tempo. Questa caratteristica si abbina bene alla mia costante volontà di apprendimento.
-              <br>Credo poi che avere il tempo e il modo di apprendere qualcosa che per di più ci piace apprendere sia un privilegio... e quindi voglio provare a perseguirlo ulteriormente.<br>
-              Tra le mie passioni occupa un posto di particolare rilievo lo studio del mondo IT e dei linguaggi di programmazione.<br>Ho coltivato questo mio interesse in autonomia fino a oggi. Mi affascina il potenziale applicativo che hanno sempre di più gli srumenti informatici in ogni ambito.
-              Mi affascina inoltre perchè sono consapevole di quanto sia vasto tale potenziale, di quanto potrei approfondirlo e, per quanto lo approfondisca, di non poter mai arrivare a un punto in cui dire "ok, ho imparato tutto". Machine Learning, Deep Learning, Cloud Computing, Data mining, per esempio, sono alcune delle mie zone buie e su cui non vedo l'ora di gettare un po' di luce.
-              <br>
-              Mi ritengo molto motivato e flessibile, le novità mi stimolano e per questo sono alla ricerca di una formazione che possa valorizzare il mio entusiasmo e tramite cui io possa ambire a dare il meglio di me.
-              Questo Master mi consentirà di proiettare su binari più definiti le conoscenze che ho per indirizzarle con prospettiva di crescita verso un futuro sempre più allineato con i miei obiettivi professionali.
-              Sono incline all'innovazione e alle nuove sfide e sono convinto che le scelte che si fanno alla mia età, poichè incidono su un intervallo di tempo futuro (possibilmente) più ampio, abbiano una rilevanza decisiva.<br>
-              Come inciso finale di questa lettera motivazionale scrivo quindi che la mia scelta ora è di lasciare un lavoro con contratto a tempo indeterminato per tornare a mettermi in gioco "full time", anche se i risparmi di un anno e mezzo lavorativo non mi saranno sufficienti a coprire le spese di un anno di Master.
-              <br>
-              <br>Nella speranza di conoscervi meglio, vi lascio con i migliori saluti
-              <br>Alessandro<br>
-            </p>
-
-            <div class="social-icons">
-              <a class="social-icon" href="https://www.linkedin.com/in/alessandro-ciocchetti-281217152/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-              <a class="social-icon" href="https://github.com/PaleAlex/cover-letter" target="_blank"><i class="fab fa-github"></i></a>
-            </div>
-            <br>
-            <%= link_to("CV here", cv_path) %>
+        <div class="resume-section-content">
+          <h1 class="mb-0">Alessandro <span class="text-primary">Ciocchetti</span></h1>
+          <div class="subheading mb-5">
+            +39 340 410 7694 ·
+            <a href="mailto:name@email.com">aless.ciocchetti@gmail.com</a> <br><br>
+            All'attenzione di Bending Spoons
           </div>
-        </section>
-        <hr class="m-0" />
 
-      <hr class="m-0" />
-    </body>
+
+            <!-- per le aziende -->
+
+          <div class="wrap-collabsible">
+            <input id="collapsible" class="toggle" type="checkbox">
+            <label for="collapsible" class="lbl-toggle">C'era una volta una vecchia candidatura: settembre 2021 </label>
+              <div class="collapsible-content">
+              <div class="content-inner">
+                <p class="lead mb-5" style = "font-size: 0.8rem; font-family: 'Segoe UI'; "><i>
+                  Ciao,<br>
+                  sono felice di potermi presentare e potervi presentare la mia candidatura.
+                  Ho approfittato dell'occasione per cercare di rendere la mia presentazione il più originale possibile, in modo tale che potesse raccontarmi già nella sua forma oltre che nel contenuto. <br> Ho creato personalmente questa web app e gli strumenti/linguaggi che ho utilizzato sono il framework Ruby on Rails con back-end gestito con Ruby e front-end HTML5 e CSS/SCSS. <br>
+                  Sono laureato magistrale in Ingegneria Gestionale-Industriale a Bologna e da un anno e mezzo lavoro per un'ottima società di consulenza direzionale per i mercati Retail, Industria e Servizi a Bologna.<br>
+                  L'ambiente consulenziale è un ambiente molto dinamico e in cui si può imparare davvero tanto in poco tempo. Questa caratteristica si abbina bene alla mia costante volontà di apprendimento.
+                  <br>Credo poi che avere il tempo e il modo di apprendere qualcosa che per di più ci piace apprendere sia un privilegio... e quindi voglio provare a perseguirlo ulteriormente.<br>
+                  Vi introduco [...]</i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div >
+            <p class="lead mb-4 mt-4">
+              Ben ritrovati, Spooners!<br><br>
+              riparto dalla storia. Veloce riassunto da dove ci eravamo lasciati a oggi: sento parlare di Bending Spoons come realtà italiana giovane e ambiziosa, mi candido per una posizione aperta per Data Analyst,
+              supero la fase di screening dei CV, supero la prima fase di quiz, non supero (<i>sigh...</i>) l'ultima fase di quiz prima dei colloqui, che delusione!, me ne dispiaccio, mi candido alle selezioni del Master in Data Science all'Università di Informatica di Pisa,
+              vinco le selezioni rientrando tra i primi 30, decido di lasciare il mio lavoro per dedicarmi a ciò che mi appassiona, comincio il Master, sto per concluderlo, vedo su LinkedIn una posizione aperta per Data Scientist,
+              preparo questa cover letter. Oggi. <br>
+              Oggi vi ringrazio perchè, insomma, quel rammarico di non essere riuscito a superare le selezioni mi ha motivato enormemente.
+              Mando questa candidatura perchè so di poterci allegare anche un buon bagaglio di conoscenze e di consapevolezza in più.
+              Sono di nuovo pronto per risolvere qualche altro vostro quiz 😁 <br>
+              Nella speranza di trovarvi ancora interessati,<br>
+              vi saluto.<br>
+              Con simpatia, <br>
+              Alessandro
+            </p>
+          </div>
+          <div class="social-icons">
+            <a class="social-icon" href="https://www.linkedin.com/in/alessandro-ciocchetti-281217152/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a class="social-icon" href="https://github.com/PaleAlex/cover-letter" target="_blank"><i class="fab fa-github"></i></a>
+          </div>
+        </div>
+
+
+
+
+      </section>
+    </div>
+  </body>
 </html>
